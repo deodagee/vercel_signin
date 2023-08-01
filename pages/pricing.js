@@ -944,7 +944,7 @@ function Pricing() {
                                         </li>
 
                                         <div className={styles.itemPrice}>
-                                            <h2>Total Price: ${staticitemPrice.toFixed(2)}</h2>
+                                            <h2 className={styles.itemPricepiece}>Total Price: ${staticitemPrice.toFixed(2)}</h2>
                                         </div>
 
 
@@ -1416,7 +1416,7 @@ function Pricing() {
                                             </ul>
                                         </li>
                                         <div className={styles.itemPrice}>
-                                            <h2>Total Price: ${dynamicitemPrice.toFixed(2)}</h2>
+                                            <h2 className={styles.itemPricepiece}>Total Price: ${staticitemPrice.toFixed(2)}</h2>
                                         </div>
 
 
@@ -1888,8 +1888,9 @@ function Pricing() {
 
                                             </ul>
                                         </li>
+                                        
                                         <div className={styles.itemPrice}>
-                                            <h2>Total Price: ${ecommerceitemPrice.toFixed(2)}</h2>
+                                            <h2 className={styles.itemPricepiece}>Total Price: ${staticitemPrice.toFixed(2)}</h2>
                                         </div>
 
                                     </ul>

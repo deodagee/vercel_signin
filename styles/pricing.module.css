@@ -151,12 +151,12 @@ background: rgb(255, 247, 0); }
 
 .itemPrice { 
   border-radius: 10px;
-  border-color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
   margin-top: -40px;
   margin-left: 10vw;
-  font-weight: 600;
-  font-size: 13px;
-  font-family: cursive;
+  font-weight: 800;
+  font-size: 19px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(255, 255, 255);
   background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F3%2F0%2Fd%2F563581.jpg&f=1&nofb=1&ipt=fcc698401a3418bda6e5560cc0495bfbc468c2bc0424650bcf7cc9d8a8bf75b2&ipo=images);
   background-size: cover;
@@ -164,11 +164,20 @@ background: rgb(255, 247, 0); }
   background-repeat: no-repeat;
   width: max-content;
   white-space: nowrap;
-  padding: 5px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
   border-width: 1px;
   transition: 1s;
+}
+
+.itemPricepiece { 
+background-color: rgb(0, 0, 0);
+padding:5px;
+padding-left: 9px;
+padding-right: 9px;
+border-radius: 0.75rem;
+
 }
 
 .itemPrice:hover { 

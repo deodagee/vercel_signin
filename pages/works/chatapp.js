@@ -28,7 +28,7 @@ import {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <a href="https://real-time-chatapp-v1-deodagee.vercel.app/">
+            <a href="https://chatbase-main-vercel.vercel.app/">
               Released <ExternalLinkIcon mx="2px" />
             </a>
           </ListItem>
