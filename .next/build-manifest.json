@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/3MRgUK8VNtKeFzSTLe8MQ/_buildManifest.js",
-    "static/3MRgUK8VNtKeFzSTLe8MQ/_ssgManifest.js"
+    "static/57zfid11DatCT5c7oLzLh/_buildManifest.js",
+    "static/57zfid11DatCT5c7oLzLh/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -47,13 +47,14 @@
       "static/chunks/framework-7a7e500878b44665.js",
       "static/chunks/main-4aa05a1a0bb27714.js",
       "static/css/c9f54e8cea6b1d97.css",
-      "static/chunks/pages/pricing-6cc47e4461dcef3c.js"
+      "static/chunks/pages/pricing-c747efb12823b3e6.js"
     ],
     "/projects": [
       "static/chunks/webpack-7e0a04d6d1a844f2.js",
       "static/chunks/framework-7a7e500878b44665.js",
       "static/chunks/main-4aa05a1a0bb27714.js",
-      "static/chunks/pages/projects-41244016d4e7062b.js"
+      "static/css/fa9b80ace59dcea6.css",
+      "static/chunks/pages/projects-94dc6738376be90e.js"
     ],
     "/services": [
       "static/chunks/webpack-7e0a04d6d1a844f2.js",
@@ -128,6 +129,12 @@
       "static/chunks/framework-7a7e500878b44665.js",
       "static/chunks/main-4aa05a1a0bb27714.js",
       "static/chunks/pages/works/modeling-8ba0fc2e981e567a.js"
+    ],
+    "/works/restaurantcoffee": [
+      "static/chunks/webpack-7e0a04d6d1a844f2.js",
+      "static/chunks/framework-7a7e500878b44665.js",
+      "static/chunks/main-4aa05a1a0bb27714.js",
+      "static/chunks/pages/works/restaurantcoffee-e1ed6a5ebf87f806.js"
     ],
     "/works/uiux": [
       "static/chunks/webpack-7e0a04d6d1a844f2.js",

@@ -350,29 +350,28 @@ function Pricing() {
                         fontSize: "15px"
                     }}>
 
-                        <a href='https://designmodo.com/static-website-hosting/#what-is-a-static-website'>
-                    <li
-                        style={{
-                            marginTop: "10px",
-                            marginBottom: "10px",
-                            color: "mintcream"
-                        }}>
-                        Static Websites</li> </a>
-                    
-                      <a href='https://designmodo.com/static-website-hosting/#what-is-a-static-website'>
-                    <li
-                        style={{
-                            marginTop: "10px",
-                            marginBottom: "10px",
-                            color: "mintcream"
-                        }}>Dynamic Websites</li> </a>
+                    <a href='https://www.wix.com/blog/static-vs-dynamic-website'>
+                        <li
+                            style={{
+                                marginTop: "10px",
+                                marginBottom: "10px",
+                                color: "mintcream"
+                            }}>Static Websites</li> </a>
+
+                    <a href='https://designmodo.com/static-website-hosting/#what-is-a-static-website'>
+                        <li
+                            style={{
+                                marginTop: "10px",
+                                marginBottom: "10px",
+                                color: "mintcream"
+                            }}>Dynamic Websites</li> </a>
                     <a href='https://ecommerceguide.com/guides/what-is-ecommerce/'>
-                    <li
-                        style={{
-                            marginTop: "10px",
-                            marginBottom: "10px",
-                            color: "mintcream"
-                        }}>Ecommerce Websites</li></a>
+                        <li
+                            style={{
+                                marginTop: "10px",
+                                marginBottom: "10px",
+                                color: "mintcream"
+                            }}>Ecommerce Websites</li></a>
                 </ul>
 
                 <h2 style={{
@@ -408,7 +407,7 @@ function Pricing() {
                         padding: "30px",
                         backgroundPosition: "center",
                         backgroundSize: "cover",
-                        filter: "contrast(100%)",  
+                        filter: "contrast(100%)",
 
                         backgroundImage: "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.designtrends.com%2Fwp-content%2Fuploads%2F2015%2F11%2F12093224%2FTransparent-Glass-Texture2.png&f=1&nofb=1&ipt=4f1fd231b97c4487eec561a077f2c8f8c4f66181582847927228505b5779ad40&ipo=images)",
                     }} className={styles.steplist}
@@ -1888,7 +1887,7 @@ function Pricing() {
 
                                             </ul>
                                         </li>
-                                        
+
                                         <div className={styles.itemPrice}>
                                             <h2 className={styles.itemPricepiece}>Total Price: ${staticitemPrice.toFixed(2)}</h2>
                                         </div>

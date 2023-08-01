@@ -2,8 +2,8 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { WorkGridItem } from '../components/grid-item';
-
-
+import styles from "/styles/projects.module.css" 
+import cafepls from '../public/images/works/cafepls.png';
 import chatapp from '../public/images/works/chatapp.jpg';
 import imageblog from '../public/images/works/imageblog.jpg';
 import bird from '../public/images/works/bird.jpg';
@@ -33,16 +33,27 @@ const Works = () => (
           Apps
         </Heading>
       </Section>
-
         <Section>
+
+        <WorkGridItem
+          mb = {10} 
+          id="restaurantcoffee" 
+          title="Cafe Pls" 
+          thumbnail={cafepls}
+          quality={50}>
+            Private Business Type Online Shop (Dynamic)
+          </WorkGridItem>
+          <div className={styles.spacer}></div>
+
           <WorkGridItem
           mb = {10} 
           id="chatapp" 
           title="Chat App" 
           thumbnail={chatapp}
           quality={50}>
-            Live Private Chat App Full Features
+            Live Private Chat App Full Features (Dynamic)
           </WorkGridItem>
+          <div className={styles.spacer}></div>
 
           
           <WorkGridItem
@@ -51,8 +62,9 @@ const Works = () => (
           title="Blog Site" 
           thumbnail={imageblog}
           quality={50}>
-            Personal Image Blog
+            Personal Image Blog (Static)
           </WorkGridItem>
+          <div className={styles.spacer}></div>
 
 
         </Section>
@@ -77,6 +89,8 @@ const Works = () => (
             quality={50}>
             More Info on This Category
           </WorkGridItem>
+          <div className={styles.spacer}></div>
+
         </Section>
 
 
@@ -96,6 +110,8 @@ const Works = () => (
           quality={50}>
           How I Shoot
           </WorkGridItem>
+          <div className={styles.spacer}></div>
+
         </Section>
       </SimpleGrid>
 
@@ -116,6 +132,8 @@ const Works = () => (
           quality={50} >
           Photo Collection
           </WorkGridItem>
+          <div className={styles.spacer}></div>
+
         </Section>
 
       </SimpleGrid>
