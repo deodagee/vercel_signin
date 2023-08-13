@@ -88,16 +88,42 @@ const Home = () => (
   .
 </Paragraph>
 
-        <Box align="center" my={4}>
-          <Button
+
+        
+        <Box align="center"  my={4}>
+          <Button pl={10} pr={6}
             as={NextLink}
-            href="/projects"
+            href="/services"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
             color="whiteAlpha.900"
             backgroundColor="orange.500"
           >
-            My portfolio
+            Services
+          </Button>
+        </Box>
+        <Box align="center"  my={4}>
+          <Button pl={10} pr={10}
+            as={NextLink}
+            href="/pricing"
+            scroll={false}
+            rightIcon={<ChevronRightIcon />}
+            color="whiteAlpha.900"
+            backgroundColor="teal.500"
+          >
+            Prices
+          </Button>
+        </Box>
+        <Box align="center"  my={4}>
+          <Button pl={8} pr={8}
+            as={NextLink}
+            href="/contact"
+            scroll={false}
+            rightIcon={<ChevronRightIcon />}
+            color="whiteAlpha.900"
+            backgroundColor="yellow.500"
+          >
+            Contact
           </Button>
         </Box>
       </Section>

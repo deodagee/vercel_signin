@@ -6,9 +6,11 @@ import { WorkGridItem } from '../components/grid-item';
 import branding from '../public/images/works/branding.jpg'
 import flstudio from '../public/images/works/flstudio.jpg'
 import frontend from '../public/images/works/frontend.jpg'
-import geometrynodes from '../public/images/works/geometrynodes.jpg'
+import hosting from '../public/images/works/hosting.jpg'
 import modeling from '../public/images/works/modeling.jpg'
 import uiux from '../public/images/works/uiux.jpg'
+import logo from '../public/images/works/logo.png'
+
 
 
 const Works = () => (
@@ -33,7 +35,38 @@ const Works = () => (
             title="Branding"
             thumbnail={branding}
             quality={50}>
-            Description
+            Businesses and Individuals
+          </WorkGridItem>
+        </Section>
+
+        <Section delay={0.1}>
+          <WorkGridItem 
+          id="frontend"
+          title="Front End/Back End"
+          thumbnail={frontend}
+          quality={50} >
+          Full Stack Web Dev
+          </WorkGridItem>
+        </Section>
+
+
+        <Section delay={0.1}>
+          <WorkGridItem id="uiux" 
+          thumbnail={uiux} 
+          quality={50}
+          title="Ui / Ux">
+          User Interfaces
+          </WorkGridItem>
+        </Section>
+
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="modeling"
+            title="3D Modeling"
+            thumbnail={modeling}
+            quality={50}
+          >
+            Blender 3.6.1
           </WorkGridItem>
         </Section>
 
@@ -43,49 +76,34 @@ const Works = () => (
             title="Audio"
             thumbnail={flstudio}
             quality={50}>
-            Description
+            FL Studio 20.9
           </WorkGridItem>
         </Section>
         
-        <Section delay={0.1}>
-          <WorkGridItem 
-          id="frontend"
-          title="Front/Back End"
-          thumbnail={frontend}
-          quality={50} >
-          Description
-          </WorkGridItem>
-        </Section>
+
          
         <Section>
           <WorkGridItem
-            id="geometrynodes"
-            title="Geometry Nodes"
-            thumbnail={geometrynodes}
+            id="hosting"
+            title="Hosting"
+            thumbnail={hosting}
             quality={50}
           >
-            Description
+          VPS
           </WorkGridItem>
         </Section>
 
-        <Section delay={0.1}>
+        <Section>
           <WorkGridItem
-            id="modeling"
-            title="Modeling"
-            thumbnail={modeling}
+            id="logo"
+            title="Logos"
+            thumbnail={hosting}
             quality={50}
           >
-            Description
+          Logos (Graphic Design)
           </WorkGridItem>
         </Section>
-        <Section delay={0.1}>
-          <WorkGridItem id="uiux" 
-          thumbnail={uiux} 
-          quality={50}
-          title="Ui / Ux">
-          Description
-          </WorkGridItem>
-        </Section>
+
       </SimpleGrid>
 
       <Section delay={0.2}>

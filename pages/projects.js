@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { WorkGridItem } from '../components/grid-item';
 import styles from "/styles/projects.module.css" 
-import cafepls from '../public/images/works/cafepls.png';
+import cafepls from '../public/images/works/cafepls.jpg';
 import chatapp from '../public/images/works/chatapp.jpg';
 import imageblog from '../public/images/works/imageblog.jpg';
 import bird from '../public/images/works/bird.jpg';
@@ -22,7 +22,7 @@ const Works = () => (
       fontSize={30} 
       mt={0}
       mb={4}>
-        Projects
+        Current Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -53,7 +53,6 @@ const Works = () => (
           quality={50}>
             Live Private Chat App Full Features (Dynamic)
           </WorkGridItem>
-          <div className={styles.spacer}></div>
 
           
           <WorkGridItem
@@ -64,7 +63,6 @@ const Works = () => (
           quality={50}>
             Personal Image Blog (Static)
           </WorkGridItem>
-          <div className={styles.spacer}></div>
 
 
         </Section>
@@ -89,7 +87,6 @@ const Works = () => (
             quality={50}>
             More Info on This Category
           </WorkGridItem>
-          <div className={styles.spacer}></div>
 
         </Section>
 
@@ -110,7 +107,6 @@ const Works = () => (
           quality={50}>
           How I Shoot
           </WorkGridItem>
-          <div className={styles.spacer}></div>
 
         </Section>
       </SimpleGrid>
@@ -123,7 +119,7 @@ const Works = () => (
         </Heading>
       </Section>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 1, 2]} gap={8}>
         <Section delay={0.5}>
           <WorkGridItem 
           id="gallery"
@@ -132,7 +128,6 @@ const Works = () => (
           quality={50} >
           Photo Collection
           </WorkGridItem>
-          <div className={styles.spacer}></div>
 
         </Section>
 

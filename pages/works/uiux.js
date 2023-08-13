@@ -1,68 +1,117 @@
 import {
-    Box,
-    Container,
-    Badge,
-    Link,
-    List,
-    ListItem,
-    UnorderedList,
-    Image,
-    SimpleGrid
-  } from '@chakra-ui/react'
-  import Layout from '../../components/layouts/article2'
-  import { Title, WorkImage, Meta } from '../../components/work2'
-  import P from '../../components/paragraph'
-  
-  const Work = () => (
-    <Layout title="Ui/Ux">
-      <Container>
-        <Title>
-          Ui/UX <Badge>Web Dev</Badge>
-        </Title>
-        <P>
-        When deciding between UI (user interface) or UX (user experience) design, or both, clients should consider their goals and objectives for their product or website. UI design focuses on the visual elements of a product, such as its layout, color scheme, and typography, while UX design involves designing the overall experience a user has with a product, including its functionality, accessibility, and usability. If the client prioritizes a visually appealing and aesthetically pleasing product, they may choose to focus on UI design. On the other hand, if the client prioritizes ease of use and a seamless user experience, they may choose to focus on UX design. If the client wants to create a product that combines both a great look and feel with a great user experience, they may choose to invest in both UI and UX design.
-        </P>
+  Box,
+  Heading,
+  Center,
+  Container,
+  Badge,
+  Link,
+  List,
+  ListItem,
+  UnorderedList,
+  Image,
+  SimpleGrid
+} from '@chakra-ui/react'
+import Layout from '../../components/layouts/article2'
+import { Title, WorkImage, Meta } from '../../components/work2'
+import P from '../../components/paragraph'
+import Section from '../../components/section'
+import { Component } from 'react'
+import { WorkGridItem } from '../../components/grid-item'
+import ui3 from '/public/images/works/ui3.jpg'
+import ui4 from '/public/images/works/ui4.jpg'
 
-        <UnorderedList my={4}>
-          <ListItem>Business-to-consumer (B2C)</ListItem>
-          <ListItem>Business-to-business (B2B)</ListItem>
-        </UnorderedList>
-  
-        <List ml={4} my={4}>
-          <ListItem>
-            <Meta>Browsers</Meta>
-            <span>All</span>
-          </ListItem>
-          <ListItem>
-            <Meta>Devices</Meta>
-            <span>Desktop + Mobile</span>
-          </ListItem>
-        </List>
-  
-        <Box align="center" my={6}>
-          <Link
-            className="link-appstore"
-            href="https://itunes.apple.com/app/id1035645520?mt=8"
-            target="_blank"
-          >
-            <Image
-              maxW={240}
-              src="https://digitalmarketinginstitute.com/blog/what-is-seo-and-why-is-it-important"
-              className="image-appstore"
-              alt="See why your SEO matters "
-              quality={50}
-            />
-          </Link>
-        </Box>
-  
-        <SimpleGrid
+
+
+const Work = () => (
+  <Layout title="Ui/Ux">
+    <Container>
+      <Title>
+        Ui/UX <Badge>Web Dev</Badge>
+      </Title>
+
+      <Heading as="h4" my={6}>
+
+        <Center style={{ margin: "15px", fontSize: "17px",marginBottom:"40px", marginTop: '66px' }}> Key Features  </Center>
+        <Center style={{ margin: "15px", fontSize: "10px", marginTop: '15px' }}><Badge style={{ fontSize: "10px" }}>User Experience</Badge></Center>
+
+      </Heading>
+      <Section>
+          <WorkGridItem
+            id="ui3"
+            thumbnail={ui3}
+            quality={50}>
+          </WorkGridItem>
+        </Section>
+      <P style={{ textAlign:"center", margin:"15px", fontSize: "12px",marginBottom:"40px" }}>
+      The User Interface (UI) of a website refers to the visual and interactive elements that users interact with when they visit your website. It encompasses everything that users see and interact with on the screen, including buttons, menus, forms, images, and content layout. A well-designed UI is crucial for creating a positive first impression and ensuring that visitors can easily navigate and engage with your website.
+      </P>
+
+        <Center style={{ margin: "15px", fontSize: "10px", marginTop: '15px' }}><Badge style={{ fontSize: "10px" }}>User Interface</Badge></Center>
+
+        <Section>
+          <WorkGridItem
+            id="ui4"
+            thumbnail={ui4}
+            quality={50}>
+          </WorkGridItem>
+        </Section>
+
+      <P style={{ textAlign:"center", margin:"15px", fontSize: "12px", marginTop: '36px' }}>
+      User Experience (UX) is the overall feeling and perception users have when interacting with your website. It encompasses everything from the UI to the content, performance, and usability. A positive UX is essential for keeping visitors engaged, encouraging them to explore your website further, and ultimately converting them into customers.
+      </P>
+      <Center my={6}>
+          <Image src="/images/footprint.png" marginTop={10} width={5} height={4} alt="icon" />
+        </Center>
+
+
+
+
+      <Box align="center" my={6}>
+        <Link
+          className=""
+          href="https://digitalmarketinginstitute.com/blog/what-is-seo-and-why-is-it-important"
+          target="_blank"
+        >
+          <Image  marginTop={70}
+            maxW={240}
+            alt="See why your SEO matters "
+            quality={50}
+          />
+        </Link>
+      </Box>
+
+
+      <List style={{ textAlign:"center", margin:"15px", fontSize: "12px", marginTop: '66px' }} ml={4} my={4}>
+        <ListItem>
+          <Center>
+          <Badge>Styles</Badge></Center>
+          <UnorderedList>
+          <List >
+          <ListItem style={{  marginTop: '10px' }}>Neumorphic</ListItem>
+          <ListItem style={{  marginTop: '10px' }}>Glassmorphic</ListItem>
+          <ListItem style={{  marginTop: '10px' }}>Skeuomorphic </ListItem>
+          <ListItem style={{  marginTop: '10px' }}>Retro </ListItem>
+          <ListItem style={{  marginTop: '10px' }}>Illustrative </ListItem>
+          <ListItem style={{  marginTop: '10px' }}>Flat </ListItem>
+          </List>
+          </UnorderedList>
+        </ListItem>
+        <ListItem>
+          <Meta>Devices</Meta>
+          <span>Desktop + Mobile</span>
+        </ListItem>
+      </List>
+
+
+
+      <SimpleGrid
         ml="35%"
-         columns={2} 
-         gap={2}>
-          <WorkImage src="/images/works/thumbnail3.jpg" alt="branding" />
-        </SimpleGrid>
-      </Container>
-    </Layout>
-  )
-  
-  export default Work
+        columns={2}
+        gap={2}>
+        <WorkImage src="/images/works/thumbnail3.jpg" alt="branding" />
+      </SimpleGrid>
+    </Container>
+  </Layout>
+)
+
+export default Work

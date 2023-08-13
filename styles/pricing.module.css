@@ -16,7 +16,7 @@ margin-bottom: 10px;
   display: grid;
 list-style: none;
 font-weight: 800;
-margin-top: 50px;
+margin-top: 10px;
 padding: 50px;
 width: 500px;
 
@@ -40,7 +40,7 @@ width: 500px;
 .description {
   font-size: 10px;
   font-weight: 400;
-  margin-top: -45px;
+  margin-top: 5px;
 }
 
 
@@ -65,6 +65,9 @@ width: 500px;
     transition: 0.5s;
   } 
 
+  .active a{ 
+    color: green ;
+  }
   .add_button:active {
     transition: 0.05s;
 color: rgb(0, 0, 0);  }
@@ -134,7 +137,7 @@ transition: 0.5s;
     border-width: 0.5px;
     margin: 5px;
     transition: 0.5s;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
   }
   .details:hover { 
     background-color: rgb(182, 144, 31);
@@ -149,30 +152,53 @@ background: rgb(255, 247, 0); }
   
 
 
+
+.tabinfowrapper { 
+  display: grid;
+
+}
+.tabinfo{ 
+  font-size: 13px;
+  font-weight: 500;
+margin-top: 5px;
+
+}
+
+.tabtitle{ 
+  font-weight: 700;
+  color: rgba(219, 107, 2, 0.798);
+}
+
+
+
 .itemPrice { 
   border-radius: 10px;
   border-color: rgb(0, 0, 0);
-  margin-top: -40px;
-  margin-left: 10vw;
-  font-weight: 800;
+  margin-top: 10px;
+    font-weight: 800;
   font-size: 19px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(255, 255, 255);
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F3%2F0%2Fd%2F563581.jpg&f=1&nofb=1&ipt=fcc698401a3418bda6e5560cc0495bfbc468c2bc0424650bcf7cc9d8a8bf75b2&ipo=images);
+  color: rgb(51, 51, 51);
+  background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/MPaEbz-/videoblocks-abstract-computer-animated-background-with-small-glowing-particles-of-blue-color-falling-from-above-against-black-background_hbwcdrnlz_thumbnail-1080_01.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: max-content;
   white-space: nowrap;
   padding: 10px;
-  padding-left: 12px;
-  padding-right: 12px;
   border-width: 1px;
   transition: 1s;
 }
 
+.itemPrice:hover { 
+  color: #474747;
+  transition: 0.3s; /* Faster transition on hover */
+  border-color: rgb(0, 0, 0); /* New border color on hover */
+  background-clip: padding-box; /* Change background-clip to padding-box on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow on hover with a different color */
+}
+
 .itemPricepiece { 
-background-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
 padding:5px;
 padding-left: 9px;
 padding-right: 9px;
@@ -180,28 +206,14 @@ border-radius: 0.75rem;
 
 }
 
-.itemPrice:hover { 
-  padding: 4.9px;
-  padding-left: 7.9px;
-  padding-right: 7.9px;
-  border-width: 1.5px; /* Slightly increased border width on hover */
-  transition: 0.3s; /* Faster transition on hover */
-  border-color: rgb(0, 0, 0); /* New border color on hover */
-  color: rgb(255, 255, 255); /* Text color change on hover */
-  background-clip: padding-box; /* Change background-clip to padding-box on hover */
-  transform: scale(1.05); /* Slight scale increase on hover */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow on hover with a different color */
-}
 
-
-  
 
 
   .menuitem {
     position:relative;
     color: rgb(229, 229, 229);
-    margin-top: 25px;
-    margin-bottom: 57px;
+    margin-top: 5px;
+    margin-bottom: 20px;
     display: grid;
     font-weight: 400;
     transition: 0.8s;
@@ -213,7 +225,7 @@ border-radius: 0.75rem;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp7043567.jpg&f=1&nofb=1&ipt=b188728054cbae54edd7752cc2407850860db3223e210df485ce2fd150f8a9f8&ipo=images);/* Optional: Add a background color for the menuitem box */
-    padding: 10px;
+    padding: 15px;
     align-items: center;
     justify-content: center; /* Optional: Add padding to create some space inside the box */
   }
@@ -228,7 +240,7 @@ border-radius: 0.75rem;
    .menuitem:active{ 
     padding: 10px;
     border-width: 8px;
-    border-color: rgb(255, 255, 255);
+    border-color: rgb(255, 0, 0);
     transition: 0.8s;
 
    }
@@ -261,6 +273,51 @@ filter: contrast(150%);
   .menuitem:nth-child(8) {
     filter: contrast(150%);
   }
+  .menuitem:nth-child(9) {
+    filter: contrast(90%);
+      }
+  .menuitem:nth-child(10) {
+    filter: contrast(150%);
+  }
+  .menuitem:nth-child(11) {
+    filter: contrast(90%);
+      }
+      .menuitem:nth-child(12) {
+        filter: contrast(150%);
+      }
+      .menuitem:nth-child(13) {
+        filter: contrast(90%);
+          }
+          .menuitem:nth-child(14) {
+            filter: contrast(150%);
+          }
+          .menuitem:nth-child(15) {
+            filter: contrast(90%);
+              }
+              .menuitem:nth-child(16) {
+                filter: contrast(150%);
+              }
+              .menuitem:nth-child(17) {
+                filter: contrast(90%);
+                  }
+                  .menuitem:nth-child(18) {
+                    filter: contrast(150%);
+                  }
+                  .menuitem:nth-child(19) {
+                    filter: contrast(90%);
+                      }
+                      .menuitem:nth-child(20) {
+                        filter: contrast(150%);
+                      }
+                      .menuitem:nth-child(21) {
+                        filter: contrast(90%);
+                          }
+    
+
+
+  .redBorder {
+    border: 2px solid rgb(201, 124, 0);
+    border-width: 5px;  }
 
 
 
@@ -270,6 +327,7 @@ filter: contrast(150%);
     background-color: #9ea3ada2; /* Optional: Add a background color for the menuitem box */
     transition: 0.8s;
    }
+
 
 
 .extrapageinfo{ 
@@ -291,6 +349,32 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    }
 
   @media (max-width: 650px) {
+    .itemPrice { 
+padding: 10px;
+      font-size: 13px;
+
+    }
+
+    .tabinfowrapper { 
+      margin: 10px;
+      display: grid;
+      max-width: max-content;
+      margin-bottom: 10vh;
+
+
+    }
+    .tabinfo{ 
+      white-space: normal;
+      font-size: 13px;
+      font-weight: 500;
+    margin-top: 5px;
+    
+    }
+    
+    .tabtitle{ 
+      font-weight: 700;
+      color: rgba(219, 107, 2, 0.798);
+    }
 
     .tabs_wrapper{
       margin-top: 0px;
@@ -308,8 +392,19 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
   
   }
+  @media (max-width: 450px) {
+    .itemPrice { 
+      padding: 10px;
+            font-size: 13px;
+      
+          }
+        }
+
+
 
   @media (max-width: 200px) {
+
+  
       .menuitemStatic{
       width: -moz-fit-content;
       width: fit-content;
