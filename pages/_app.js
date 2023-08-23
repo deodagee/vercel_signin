@@ -1,21 +1,28 @@
-import { ChakraProvider } from "@chakra-ui/react" ;
-import Layout from '../components/layouts/main';
-import Fonts from "../components/fonts";
-import theme from '../lib/theme';
+import { ChakraProvider, StylesProvider } from "@chakra-ui/react" ;
+import Fonts from "./components/fonts";
 import { AnimatePresence } from "framer-motion";
+
 
 const Website = ({Component, pageProps, router}) => {
     return (
-    <ChakraProvider
-    theme={theme}>
+    <ChakraProvider>
         <Fonts />
-        <Layout router={router}> 
         <AnimatePresence mode='sync' initial={true}>
             <Component {...pageProps} key={router.route} /> 
         </AnimatePresence>
-        </Layout>
     </ChakraProvider>
     )
 }
 
 export default Website
+
+
+/*
+
+Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons.
+
+*/
+
+
+
+

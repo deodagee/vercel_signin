@@ -1,3 +1,7 @@
+.parentcontainer{ 
+  z-index: 2;
+  margin-top: 10vh;
+}
 
 .container {
     transition: 1s;
@@ -56,28 +60,8 @@
     display: none; 
   }
 
-  @media (min-width: 768px) {
-    .paragraph {
-      font-size: 10px; 
-        transition: 1s;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    
-    .paragraph {
-      font-size: 11px;
-        transition: 1s;
-    }
-  }
-  
 
-  @media (min-width: 350px) and (max-width: 500px) {
-    .button { 
-      transform: translateY(-200px); 
 
-    }
-  }
   
 
      

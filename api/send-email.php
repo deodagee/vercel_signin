@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Set the recipient email address
   $to = 'astrular@astrumstellar.com';
 
-  // Set the email subject
+  // Set the email subjectQuote
   $subject = sprintf('[%s] New message from %s', $category, $name);
 
   // Set the email message
