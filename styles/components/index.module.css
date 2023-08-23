@@ -1,0 +1,18 @@
+
+.index_parent{ 
+    background-size: contain ;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100vw;
+}
+
+.home_parent {
+width: max-content;
+display: flex;
+justify-content: center;
+scroll-snap-type: proximity;
+}
+
+
+.footer{ 
+    width: 90vw;
+}

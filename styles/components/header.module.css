@@ -1,0 +1,659 @@
+* .div,
+.ul,
+.li,
+.ol,
+.p {
+
+  transition: 0.3s;
+}
+
+.parent {
+  width: max-content;
+}
+
+/*  background-image: url("https://images.pexels.com/photos/911738/pexels-photo-911738.jpeg?auto=compress&cs=tinysrgb&w=600");
+*/
+.parent_wrapper {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 20px;
+  background-color: rgba(8, 8, 24, 0.959);
+  background-position: center;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+.logo_and_info {
+  height: max-content;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.signature {
+  width: 180px;
+  padding-left: 7vw;
+  padding-top: 0.2vh;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.signature:hover {
+  transition: 0.5s;
+  transform: scale(1.03);
+}
+
+.sample_logo {
+  position: absolute;
+  margin-left: 3vw;
+  margin-right: 0vw;
+  margin-top: -0.3vh;
+  transition: 0.3s;
+}
+
+.header_logo {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  transition: 0.4s;
+  padding: 0px;
+  transform: scale(1);
+}
+
+.header_logo:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+.promo_list {
+  padding-top: 0vh;
+  padding-bottom: 2vh;
+  padding-left: 20vw;
+  font-size: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  gap: 10px;
+  display: flex;
+  border-radius: 0.35rem;
+  font-weight: 600;
+  flex-direction: row;
+  transition: 1s;
+  color: rgb(220, 220, 220);
+}
+
+.promo1,
+.promo2,
+.promo3,
+.promo4 {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: nowrap;
+  transition: 1s;
+}
+
+.promo1:hover,
+.promo2:hover,
+.promo3:hover,
+.promo4:hover {
+  background-color: rgba(255, 255, 255, 0.212);
+  border-radius: 0.35rem;
+  color: #ffffff;
+  transition: 1s;
+}
+
+.buttons {
+  height: max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-right: 6vw;
+  margin-top: 0vh;
+  transition: 0.3s;
+}
+
+.register_button:hover,
+.login_button:hover {
+  background-color: #ffffff;
+  color: rgb(34, 34, 34);
+  transition: 0.3s;
+  transform: scale(1.01);
+}
+
+.buttons_wrapper {
+  padding: 10px;
+  list-style: none;
+  display: flex;
+}
+
+.register_button,
+.login_button {
+  box-shadow: white 0px 0px 5px;
+  font-size: 11px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: 0.8s;
+  border: none;
+  background-color: #00af49;
+  color: #ffffff;
+  width: 70px;
+  margin: 0 0px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  border-radius: 0.20rem;
+  cursor: pointer;
+}
+
+.register_button:hover,
+.login_button:hover {
+  box-shadow: white 0px 0px 10px;
+  background-color: #ffffff;
+  color: rgb(34, 34, 34);
+  transition: 0.3s;
+  transform: scale(1.01);
+}
+
+.register,
+.login {
+  margin: 0;
+}
+
+.menubar {
+  height: max-content;
+  box-shadow: -5px 5px 7px #9f9f9fb8;
+  font-weight: 700;
+  font-size: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: max-content;
+  display: flex;
+  position: absolute;
+  background-color: rgb(234, 234, 234);
+  color: rgb(61, 61, 61);
+  transition: 2s;
+  list-style: none;
+  flex-direction: row;
+  margin-top: 7vh;
+  padding-bottom: 1vh;
+}
+
+.menubar.scrolling {
+  box-shadow: none;
+}
+
+.menubar:hover {
+  background-color: rgba(10, 9, 23, 0.7);
+  transition: 2s;
+  color: rgb(216, 216, 216);
+}
+
+.menubar p {
+  padding-top: 1vh;
+  padding-bottom: 3x;
+  transition: 0.4s;
+}
+
+.menubar p:hover {
+  text-decoration: underline;
+  transition: 0.6s;
+  color: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+
+.menulist {
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  width: 100vw;
+  white-space: nowrap;
+  gap: 150px;
+}
+
+.menulist li {
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  margin-left: 0px;
+  transition: 0.5s;
+}
+
+.menulist li:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: 300px) and (max-width: 375px) {
+
+  .logo_and_info {
+    margin-top: -2vh;
+    width: max-content;
+  }
+
+  .promo_list {
+    margin-top: 6vh;
+    margin-left: -16vw;
+    font-size: 7px;
+    margin-bottom: 1vh;
+  }
+
+  .sample_logo {
+    transform: scale(0.8);
+    margin-left: 5vw;
+  }
+
+  .signature {
+    margin-top: 2px;
+    margin-left: 12vw;
+    transform: scale(0.7);
+  }
+
+  .buttons {
+    width: 90px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: -33vw;
+    margin-top: 5px;
+    margin-bottom: 0vh;
+    transform: scale(0.9);
+  }
+
+  .register_button,
+  .login_button {
+    font-size: 8px;
+
+  }
+
+  .promo1,
+  .promo2,
+  .promo3,
+  .promo4 {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    white-space: nowrap;
+  }
+
+  .menubar {
+    margin-top: 8vh;
+  }
+
+  .menulist {
+    gap: 17px;
+  }
+
+  .features {
+    font-size: 7px;
+  }
+
+}
+
+@media (min-width: 375px) and (max-width: 540px) {
+  .logo_and_info {
+    margin-top: -1vh;
+    margin-bottom: 0;
+    width: max-content;
+  }
+
+  .sample_logo{ 
+    margin-left: 0;
+    transform: scale(0.8);
+  }
+
+  .promo_list {
+    margin-right: 10vw;
+    font-size: 7px;
+    margin-bottom: 0vh;
+    margin-top: 5vh;
+
+  }
+
+  .sample_logo {
+    margin-left: 5vw;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+
+  .signature {
+    margin-left: 12vw;
+    margin-bottom: 0;
+    margin-top: 6px;
+    transform: scale(0.9);
+
+
+  }
+
+  .buttons {
+    transform: scale(0.9);
+    height: max-content;
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: -35vw;
+    margin-top: 8px;
+    margin-bottom: 0vh;
+  }
+
+  .register_button,
+  .login_button {
+    font-size: 9px;
+  }
+
+  .promo1,
+  .promo2,
+  .promo3,
+  .promo4 {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    white-space: nowrap;
+  }
+
+  .menubar {
+    margin-bottom: 0;
+    margin-top: 9vh;
+  }
+
+
+  .menulist {
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 25px;
+  }
+
+
+  .features {
+    font-size: 8px;
+  }
+
+}
+
+@media (min-width: 540px) and (max-width: 640px) {
+  .logo_and_info {
+    margin-top: -0.5vh;
+    margin-bottom: 0;
+  }
+
+  .promo_list {
+    margin-left: -5vw;
+    font-size: 7px;
+    margin-bottom: -1vh;
+    margin-top: 4vh;
+  }
+
+  .sample_logo {
+    margin-left: 5vw;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+
+  .signature {
+    margin-left: 9vw;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .buttons {
+    width: 115px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: -35vw;
+    margin-top: 5px;
+    margin-bottom: 0vh;
+  }
+
+  .promo1,
+  .promo2,
+  .promo3,
+  .promo4 {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    white-space: nowrap;
+  }
+
+  .menubar {
+    margin-bottom: 0;
+    margin-top: 9vh;
+  }
+
+  .menulist {
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 25px;
+  }
+
+  .features {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 800px) {
+
+  .promo_list {
+    font-size: 8px;
+    margin-top: 0.5vh;
+    margin-left: 3vw;
+  }
+
+  .signature {
+    margin-left: 2vw;
+  }
+
+  .promo1,
+  .promo2,
+  .promo3,
+  .promo4 {
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: nowrap;
+  }
+
+
+  .buttons {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 4vw;
+    margin-top: 0vh;
+    margin-bottom: 2vh;
+  }
+
+  .menubar {
+    margin-top: 8vh;
+  }
+
+  .menulist {
+    gap: 35px;
+  }
+
+}
+
+
+@media (min-width: 800px) and (max-width: 951px) {
+
+  .promo_list {
+    padding-top: 5px;
+    padding-bottom: 3vh;
+  }
+
+
+  .sample_logo {
+    margin-top: 0px;
+  }
+
+  .signature {
+    margin-left: 1vw;
+  }
+
+  .menulist {
+    gap: 80px;
+  }
+
+  .buttons {
+
+    margin-top: 3px;
+
+  }
+
+
+  .menubar {
+    margin-top: 8vh;
+  }
+
+
+}
+
+@media (min-width: 951px) and (max-width: 1056px) {
+
+  .promo_list {
+    padding-top: 5px;
+    padding-bottom: 0vh;
+  }
+
+
+  .sample_logo {
+    margin-top: 0px;
+  }
+
+  .signature {
+    margin-left: 1vw;
+  }
+
+  .menulist {
+    gap: 80px;
+  }
+
+  .buttons {
+
+    margin-top: 3px;
+
+  }
+
+
+  .menubar {
+    margin-top: 8vh;
+  }
+
+}
+
+@media (min-width: 1056px) and (max-width: 1157px) {
+  .promo_list {
+    padding-top: 5px;
+    padding-bottom: 3vh;
+  }
+
+
+  .sample_logo {
+    margin-top: 0px;
+  }
+
+  .signature {
+    margin-left: 1vw;
+  }
+
+  .menulist {
+    gap: 80px;
+  }
+
+  .buttons {
+
+    margin-top: 3px;
+
+  }
+
+
+  .menubar {
+    margin-top: 8vh;
+  }
+}
+
+
+@media (min-width: 1157px) and (max-width: 1258px) {
+  .promo_list {
+    padding-top: 5px;
+    padding-bottom: 3vh;
+  }
+
+
+  .sample_logo {
+    margin-top: 0px;
+  }
+
+  .signature {
+    margin-left: 1vw;
+  }
+
+  .menulist {
+    gap: 80px;
+  }
+
+  .buttons {
+
+    margin-top: 3px;
+
+  }
+
+
+  .menubar {
+    margin-top: 8vh;
+  }
+}
+
+
+@media (min-width: 1258px) and (max-width: 1492px) {
+  .promo_list {
+    padding-top: 5px;
+    padding-bottom: 3vh;
+  }
+
+
+  .sample_logo {
+    margin-top: 0px;
+  }
+
+  .signature {
+    margin-left: 1vw;
+  }
+
+  .menulist {
+    gap: 80px;
+  }
+
+  .buttons {
+
+    margin-top: 3px;
+
+  }
+
+
+  .menubar {
+    margin-top: 8vh;
+  }
+}
+

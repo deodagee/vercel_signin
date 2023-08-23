@@ -1,0 +1,32 @@
+.listwrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Title1, .Title2, .Title3 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Title1:hover, .Title2:hover, .Title3:hover {
+  background-color: #f0f0f0;
+}
+
+.visible p {
+  visibility: visible;
+}
+
+.visible div {
+  display: block;
+}
+
+p {
+  visibility: hidden;
+}
+
+div {
+  display: none;
+}
