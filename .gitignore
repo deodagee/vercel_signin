@@ -1,23 +1,24 @@
-# Node.js
+# Dependency directories
 node_modules/
+yarn.lock
+package-lock.json
 
-# Next.js build output
+# Build output
+out/
 .next/
-/out/
-/build
+build/
+dist/
 
 # Environment variables
+.env
 .env.local
 .env.development
 .env.production
 
-# Logs
+# Logs and cache
 logs
 *.log
-
-# Dependency lock files
-package-lock.json
-yarn.lock
+.pnpm-debug.log
 
 # IDE-specific files
 .idea/
@@ -33,9 +34,11 @@ yarn.lock
 Thumbs.db
 
 # npm cache
-.npm
+.npm/
 
-# Build artifacts
-build/
-out/
-dist/
+# Temporary files
+*.tmp
+
+# Custom files or directories you want to ignore
+custom_ignore_directory/
+custom_ignore_file.txt
