@@ -1,4 +1,5 @@
 import styles from "../../styles/components/header.module.css";
+import xsmStyles from "../../styles/components/header_xsm_mobile.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,14 +12,11 @@ function Header() {
 
         <div className={styles.parent_wrapper}>
 
+          <ul className={`${styles.logo__signature_and_button_parent} ${xsmStyles.logo__signature_and_button_parent_xsm}`}>
 
-
-          <ol className={styles.logo_and_info}>
-
-            <li className={styles.sample_logo}>
+            <li className={styles.logo_item}>
               <Image
-              className={styles.header_logo}
-                alt="logo"
+                className={`${styles.header_logo} ${xsmStyles.header_logo_xsm}`} alt="logo"
                 width={50}
                 height={50}
                 src={"/logored.png"}
@@ -26,11 +24,9 @@ function Header() {
               </Image>
             </li>
 
-            <li className={styles.signature}>
+            <li className={styles.signature_item}>
               <Image
-                className="w-30 h-7"
-
-                aria-label="signature"
+                className={`${styles.header_signature} ${xsmStyles.header_signature_xsm}`} aria-label="signature"
                 alt="signature"
                 width={90}
                 height={90}
@@ -39,108 +35,105 @@ function Header() {
               </Image>
             </li>
 
-            <li className={styles.promo_list}>
+            <ul className={`${styles.buttons} ${xsmStyles.buttons_xsm}`}>
+              <li className={styles.register}>
+                <button className={`${styles.register_button} ${xsmStyles.register_button_xsm}`}>
+                  <p>Register</p>
+                </button>
+              </li>
 
-              <p className={styles.promo1}>
-                Private Domains
-              </p>
-              <p className={styles.promo2}>
-                Dall-E Engines
-              </p>
-              <p className={styles.promo3}>
-                3D Renders
-              </p>
-              <p className={styles.promo4}>
-                Wix?
-              </p>
-              <p className={styles.promo4}>
-                Hostgator?
-              </p>
-            </li>
+              <li className={styles.register}>
+                <button className={`${styles.login_button} ${xsmStyles.login_button_xsm}`}>
+                  <p>Login</p>
+                </button>
+              </li>
+            </ul>
+          </ul>
 
-            <li className={styles.buttons} >
-              <button className={styles.register_button}>
-                <p className={styles.register}>Register</p>
-              </button>
-              <button className={styles.login_button}>
-                <p className={styles.register}>Login</p>
-              </button>
-            </li>
+          <ol className={styles.menu_bars_wrapper}>
 
+            <ul className={`${styles.first_menubar} ${xsmStyles.first_menubar_xsm}`}>
+              <li className={styles.first_menubar_item}>
+                <p className={styles.promo1}>
+                  Private Domains
+                </p>
+              </li>
+              <li className={styles.first_menubar_item}>
+                <p className={styles.promo2}>
+                  Dall-E Engines
+                </p>
+              </li>
+              <li className={styles.first_menubar_item}>
+                <p className={styles.promo3}>
+                  3D Renders
+                </p>
+              </li>
+              <li className={styles.first_menubar_item}>
+                <p className={styles.promo4}>
+                  Wix?
+                </p>
+              </li>
+              <li className={styles.first_menubar_item}>
+                <p className={styles.promo4}>
+                  Hostgator?
+                </p>
+              </li>
+
+            </ul>
+
+
+            <ul className={`${styles.second_menubar} ${xsmStyles.second_menubar_xsm}`}>
+
+              <li className={styles.menuitem}>
+                <Link legacyBehavior
+                  href="/"
+                >
+                  <p className={styles.second_menubar_item}>Home</p>
+                </Link >
+              </li>
+
+              <li className={styles.menuitem}>
+                <Link legacyBehavior
+                  href="/services"
+                >
+                  <p className={styles.second_menubar_item}>Services</p>
+                </Link>
+              </li>
+
+              <li className={styles.menuitem}>
+                <Link legacyBehavior
+                  href="/pricing"
+                >
+                  <p className={styles.second_menubar_item}>Pricing</p>
+                </Link>
+              </li>
+
+              <li className={styles.menuitem}>
+                <Link legacyBehavior
+                  href="/projects"
+                >
+                  <p className={styles.second_menubar_item}>Projects</p>
+                </Link>
+              </li>
+
+              <li className={styles.menuitem}>
+                <Link legacyBehavior
+                  href="/contact"
+                >
+                  <p className={styles.second_menubar_item}>Contact Me</p>
+                </Link>
+              </li>
+
+              <li className={styles.menuitem}>
+                <Link legacyBehavior
+                  href="https://github.com/deodagee?tab=repositories"
+                >
+                  <p className={styles.second_menubar_item}>Source Code</p>
+                </Link>
+              </li>
+
+            </ul>
           </ol>
-
-
-
-
-
-
-
-          <ol className={styles.menubar}>
-
-
-            <li className={styles.menulist}>
-              <Link legacyBehavior
-                href="/"
-              >
-                <span className={styles.features}> <p> Home </p>
-                </span>
-              </Link >
-
-
-
-              <Link legacyBehavior
-                href="/services"
-              >
-                <span className={styles.features}> <p> Services </p>
-                </span>
-
-              </Link>
-
-
-
-
-              <Link legacyBehavior
-                href="/pricing"
-              >
-                <span className={styles.features}> <p> Pricing </p>
-                </span>
-
-              </Link>
-
-
-
-
-              <Link legacyBehavior
-                href="/projects"
-              >
-                <span className={styles.features}> <p> Projects </p>
-                </span>
-
-              </Link>
-
-
-
-
-              <Link legacyBehavior
-                href="/contact"
-              >
-                <span className={styles.features}> <p> Contact Me </p>
-                </span>
-
-              </Link>
-
-
-              <Link legacyBehavior
-                href="https://github.com/deodagee?tab=repositories"
-              >
-                <span className={styles.features}> <p> Source Code </p>
-                </span>
-
-              </Link>
-            </li>
-
-          </ol>
-
 
         </div>
       </div>
