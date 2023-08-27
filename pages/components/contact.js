@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Container, Heading, FormControl, FormLabel, Input, Textarea, Select, Button } from '@chakra-ui/react';
 import Layout from './layouts/main';
 import Section from './section';
-import styles from "../../styles/components/contact.module.css"
+import styles from "/styles/components/contact.module.css"
 
 const Posts = () => {
   const [name, setName] = useState('');

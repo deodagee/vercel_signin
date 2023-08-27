@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 415px) and (orientation: portrait) {
+@media (min-width: 300px) and (max-width: 415px) and (orientation: portrait) {
 
     .parent {
         z-index: 100;
@@ -39,7 +39,7 @@
     }
 
     .first_menubar_xsm {
-        gap: 4px;
+        gap: 0px;
         margin-top: 5px;
         margin-bottom: -1px;
         font-size: 9px;
@@ -50,7 +50,7 @@
     }
 
     .second_menubar_xsm {
-        gap: 12px;
+        gap: 5px;
         margin-bottom: 0px;
         font-size: 9px;
     }
@@ -92,7 +92,7 @@
 }
 
 
-@media only screen and (max-device-width: 568px) and (orientation: landscape) {
+@media (min-width: 568px) and (max-width: 738px) and (orientation: landscape) {
 
     .logo__signature_and_button_parent_xsm {
         display: flex;
