@@ -1,0 +1,11 @@
+.services_parent { 
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.services_wrapper { 
+    display: flex;
+    position: relative;
+}
+

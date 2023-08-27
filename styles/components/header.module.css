@@ -75,7 +75,7 @@ transform: scale(1.1);
   border-right: none;
   border-bottom: none;
   border-color: rgb(255, 255, 255);
-  border-width: 1px;
+  border-width: 0.5px;
   gap: 8vw;
   width: 100vw;
   display: flex;
@@ -86,24 +86,22 @@ transform: scale(1.1);
   align-items: center;
   justify-content: center;
   transition: 0.4s;
-  background-color: rgba(228, 228, 228, 0.941);
+  background-color: rgb(246, 246, 246);
   padding: 5px;
+  padding-top:9px;
+  padding-bottom: 10px;
   margin-bottom: -1px;
+  color: rgb(59, 59, 59);
 }
-.first_menubar p{ 
-  color: rgb(56, 56, 56);
-  transition: 0.4s;
-   }
    .first_menubar p:hover{ 
      cursor: pointer;
      transition: 0.4s;
-     color: rgb(129, 129, 129);
+     color: rgb(223, 223, 223);
    }
  
 .first_menubar:hover{ 
-  color: rgb(0, 0, 0);
   transition: 0.4s;
-  background-color: rgba(252, 252, 252, 0.99);
+  background-color: rgba(252, 252, 252, 0);
 }
 
 .second_menubar{ 
@@ -116,27 +114,27 @@ transform: scale(1.1);
   white-space: nowrap;
   align-items: center;
   justify-content: center;
-  transition: 0.4s;
-  background-color: rgb(239, 239, 239);
+  transition: 1s;
+  background-color: rgb(242, 242, 242);
   padding: 5px;
   padding-top: 8px;
   padding-bottom: 8px;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-color: rgb(157, 157, 157);
+  border-color: rgb(212, 212, 212);
   color: rgb(31, 31, 31);
   border-width: 1px;
-  box-shadow: black 0px 0px 10px 0px  ;
+  box-shadow: rgb(72, 72, 72) 0px 0px 6px  ;
 
 }
 
-
 .second_menubar:hover{ 
-  transition: 2s;
+  transition: 1s;
   color: rgb(224, 119, 0);
-  background-color: rgb(230, 230, 230);
+  background-color: rgba(242, 242, 242, 0);
   }
+
   .second_menubar p{ 
  transition: 0.7s;
   }
@@ -160,32 +158,32 @@ text-decoration: underline;
 .register_button{ 
   border-width: 0.5px;
   border-color: white;
-  width: 60px;
+  width: 70px;
   padding: 5px;
   padding-top: 7px;
   padding-bottom: 7px;
-  background-color: green;
-  border-radius: 0.35rem;
+  background-color: rgb(17, 65, 0);
+  border-radius: 0.70rem;
   transition: 0.7s;
 }
 .register_button:hover{ 
-  background-color: rgb(0, 72, 0);
+  background-color: rgb(8, 20, 27);
   transition: 0.7s;
 }
 
 .login_button{ 
   border-width: 0.5px;
   border-color: white;
-  width: 60px;
+  width: 70px;
   padding: 5px;
   padding-top: 7px;
   padding-bottom: 7px;
-  background-color: green;
-  border-radius: 0.35rem;
+  background-color: rgb(41, 50, 55);
+  border-radius: 0.70rem;
   transition: 0.4s;
 }
 .login_button:hover{ 
-  background-color: rgb(0, 72, 0);
+  background-color: rgb(8, 20, 27);
   transition: 0.4s;
   }
 

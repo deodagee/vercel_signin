@@ -19,6 +19,7 @@ function Body() {
   };
   return (
     <>
+      
       <div className={styles.whole}>
         <div className={styles.parent_wrapper}>
 

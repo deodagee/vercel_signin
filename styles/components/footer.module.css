@@ -10,7 +10,7 @@
 }
 
 .wrapper {
-    width: 95vw;
+    width: 100vw;
     padding: 0 20px;
     margin-left: 2vw;
 }
@@ -185,6 +185,59 @@
     font-weight: 500;
     color: rgb(255, 0, 0);
 }
+@media (min-width: 200px) and (max-width: 300px) and (orientation: portrait) {
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        position: relative;
+        width: 100vw;
+    }
+
+    .wrapper {
+        width: 100vw;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .list_sections {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sections {
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .section li {
+        font-size: 8px;
+ 
+    }
+
+    .avatarContact {
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .iconsAndCopy {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .iconWrapper {
+        margin-top: 10px;
+    }
+
+
+}
 
 @media (min-width: 300px) and (max-width: 415px) and (orientation: portrait) {
     .footer {
@@ -262,6 +315,59 @@
 
     .sections {
         flex-direction: column;
+    }
+
+    .section {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .avatarContact {
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .iconsAndCopy {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .iconWrapper {
+        margin-top: 10px;
+    }
+
+
+
+} 
+
+@media (min-width: 1000px) and (max-width: 1500px) and (orientation: landscape) {
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        position: relative;
+        width: 100vw;
+    }
+
+    .wrapper {
+        width: 95vw;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .list_sections {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sections {
+        flex-direction: row;
     }
 
     .section {
