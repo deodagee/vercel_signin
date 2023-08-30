@@ -6,8 +6,9 @@ function Footer() {
   return (
 
 
-    <footer className={styles.footer}>
+    <div className={styles.footer}>
       <div className={styles.wrapper}>
+
       <div className={styles.separatorLine1}></div>
 
         <ul className={styles.sections}>
@@ -64,7 +65,7 @@ function Footer() {
         </ul>
         </ul>
 
-        <div className={styles.separatorLine}></div>
+        <div className={styles.separatorLine1}></div>
 
         <ul className={styles.iconsAndCopy}>
           <li className={styles.iconWrapper}>
@@ -102,7 +103,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-    </footer>
+    </div>
   );
 }
 

@@ -6,6 +6,7 @@ import { useState } from "react";
 
 
 function Body() {
+
   const [displayUI, setDisplayUI] = useState('group_52374');
   const [clickedButton, setClickedButton] = useState("group_52374");
   const showUI1 = () => {
@@ -19,12 +20,11 @@ function Body() {
   };
   return (
     <>
-      
+
       <div className={styles.whole}>
         <div className={styles.parent_wrapper}>
 
           <ol className={styles.everything_wrapper}>
-
 
 
             <ul className={styles.name_and_emails_wrapper}>
@@ -206,9 +206,9 @@ function Body() {
                   </li>
 
                   <li className={styles.bio_item}>
-                  <h1>Bio</h1>
+                    <h1>Bio</h1>
                     <h1>2017<span>Diploma - Network Admin | CCNA, CCNP, & NET+</span></h1>
-                    <h1>Skills<span></span></h1> 
+                    <h1>Skills<span></span></h1>
                     <h1>HTML<span>HTML (Hypertext Markup Language) is the standard markup language used to create web pages and provide the structure and content of a website, allowing developers to define headings, paragraphs, lists, links, images, and other elements that are displayed in the browser.</span></h1>
                     <h1>CSS<span>CSS3 (Cascading Style Sheets Level 3) is a stylesheet language used to control the presentation of web content, providing a wide range of visual effects, layout capabilities, and media queries, allowing developers to create responsive designs, animations, and transformations, while improving performance by separating the presentation from the HTML structure.</span></h1>
                     <h1>NextJs<span>Next.js is a popular React-based framework that provides a simplified development experience for building server-rendered, statically generated, and dynamically serving web applications, allowing developers to focus on writing their application logic and leveraging its built-in performance optimization, automatic code splitting, and optimally configured production builds.</span></h1>
@@ -220,70 +220,38 @@ function Body() {
                   </div>
 
                   <ul className={styles.tabber_buttons_list}>
-                    <table className={styles.tabber_buttons_table}>
-
-                      <li className={styles.table_item}>
-                        <tr>
-                          <td>
-                            <button class={styles.services_more_button}>
-                              <p >Services {" >"}</p>
-                            </button>
-                          </td>
-                        </tr>
-                      </li>
-
-                      <li className={styles.table_item}>
-                        <tr>
-                          <td>
-                            <button class={styles.prices_more_button}>
-                              <p >Prices {" >"}</p>
-                            </button>
-                          </td>
-                        </tr>
-                      </li>
-
-                      <li className={styles.table_item}>
-                        <tr>
-                          <td>
-                            <button class={styles.contact_more_button}>
-                              <p >Contact {" >"}</p>
-                            </button>
-                          </td>
-                        </tr>
-                      </li>
-
-                      <li className={styles.table_item}>
-                        <tr>
-                          <td>
-                            <button class={styles.projects_more_button}>
-                              <p >Projects {" >"}</p>
-                            </button>
-                          </td>
-                        </tr>
-                      </li>
-
-                      <li className={styles.table_item}>
-                        <tr>
-                          <td>
-                            <button class={styles.more_more_button}>
-                              <p >More {" >"}</p>
-                            </button>
-                          </td>
-                        </tr>
-                      </li>
-
-                      <li className={styles.table_item}>
-                        <tr>
-                          <td>
-                            <button class={styles.more_more_button}>
-                              <p >More {" >"}</p>
-                            </button>
-                          </td>
-                        </tr>
-                      </li>
-
-                    </table>
+                    <li className={styles.table_item}>
+                      <button className={styles.services_more_button}>
+                        <p>Services {" >"}</p>
+                      </button>
+                    </li>
+                    <li className={styles.table_item}>
+                      <button className={styles.prices_more_button}>
+                        <p>Prices {" >"}</p>
+                      </button>
+                    </li>
+                    <li className={styles.table_item}>
+                      <button className={styles.contact_more_button}>
+                        <p>Contact {" >"}</p>
+                      </button>
+                    </li>
+                    <li className={styles.table_item}>
+                      <button className={styles.projects_more_button}>
+                        <p>Projects {" >"}</p>
+                      </button>
+                    </li>
+                    <li className={styles.table_item}>
+                      <button className={styles.more_more_button}>
+                        <p>More {" >"}</p>
+                      </button>
+                    </li>
+                    <li className={styles.table_item}>
+                      <button className={styles.more_more_button}>
+                        <p>More {" >"}</p>
+                      </button>
+                    </li>
                   </ul>
+
                 </ul>
               </div>
             </div>
