@@ -1,29 +1,9 @@
 @media (min-width: 200px) and (max-width: 300px) and (orientation: portrait) {
 
-    .parent {
-        z-index: 100;
-        background-color: #05151e;
-        color: white;
-        display: flex;
-        position: fixed;
-        width: 100vw;
-        padding: 0;
-        margin: 0;
-    }
-
-    .parent_wrapper {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0;
-    }
-
     .logo__signature_and_button_parent_xsm {
         display: flex;
         flex-direction: row;
-        gap: 0px;
+        gap: 0vw;
         width: 100vw;
     }
 
@@ -91,30 +71,12 @@
 
 @media (min-width: 300px) and (max-width: 800px) and (orientation: portrait) {
 
-    .parent {
-        z-index: 100;
-        background-color: #05151e;
-        color: white;
-        display: flex;
-        position: fixed;
-        width: 100vw;
-        padding: 0;
-        margin: 0;
-    }
 
-    .parent_wrapper {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
 
     .logo__signature_and_button_parent_xsm {
         display: flex;
         flex-direction: row;
-        gap: 0px;
+        gap: 0vw;
         width: 100vw;
     }
 
@@ -123,7 +85,7 @@
     }
 
     .header_signature_xsm {
-        margin-left: 0px;
+        margin-left: 20vw;
         margin-right: 0px;
         margin-top: 14px;
         transform: scale(0.9);
@@ -155,7 +117,7 @@
         display: flex;
         margin: 5px;
         margin-top: 14px;
-        margin-right: 1vw;
+        margin-right: 5vw;
         font-size: 10px;
         flex-direction: row;
         margin-left: auto;
@@ -177,6 +139,78 @@
     }
 
 }
+
+
+
+@media (min-width: 800px) and (max-width: 1300px) and (orientation: portrait) {
+
+    .logo__signature_and_button_parent_xsm {
+        display: flex;
+        flex-direction: row;
+        gap: 35vw;
+    }
+
+    .header_logo_xsm {
+        transform: scale(0.6);
+    }
+
+    .header_signature_xsm {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 14px;
+        transform: scale(0.9);
+    }
+
+    .first_menubar_xsm {
+        gap: 35px;
+        margin-top: 0px;
+        margin-bottom: -3px;
+        font-size: 9px;
+    }
+
+    .first_menubar_xsm p {
+        padding: 6px;
+    }
+
+    .second_menubar_xsm {
+        gap: 35px;
+        margin-bottom: 0px;
+        font-size: 9px;
+    }
+
+    .second_menubar_xsm p {
+        padding: 6px;
+    }
+
+    .buttons_xsm {
+        gap: 10px;
+        display: flex;
+        margin: 5px;
+        margin-top: 17px;
+        margin-right: 5vw;
+        font-size: 10px;
+        flex-direction: row;
+        margin-left: auto;
+        transform: scale(1.1);
+    }
+
+    .register_button_xsm {
+        width: 60px;
+        padding: 5px;
+        padding-top: 5px;
+        padding-bottom: 6px;
+    }
+
+    .login_button_xsm {
+        width: 60px;
+        padding: 5px;
+        padding-top: 5px;
+        padding-bottom: 6px;
+    }
+
+}
+
+
 
 @media (min-width: 200px) and (max-width: 350px) and (orientation: landscape) {
     .logo__signature_and_button_parent_xsm {
@@ -391,7 +425,7 @@
     .logo__signature_and_button_parent_xsm {
         display: flex;
         flex-direction: row;
-        gap: 24vw;
+        gap: 14vw;
     }
 
     .header_logo_xsm {
@@ -453,4 +487,6 @@
     }
 
 }
+
+
 

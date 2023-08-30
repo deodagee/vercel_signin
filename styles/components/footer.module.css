@@ -1,398 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/*font-family: 'Oswald', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
+/*  font-family: 'Cabin', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+/*  font-family: 'Teko', sans-serif;
+*/
 
 .footer {
-    background-color: #ffffff;
-    margin-top: -2vh;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    padding: 30px 0;
-    font-family: Arial, sans-serif;
+  background-color: #0c1215;
+  color: white;
+  padding: 10px;
 }
 
 .wrapper {
-    width: 100vw;
-    padding: 0 20px;
-    margin-left: 2vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 
-.list_sections {
-    font-size: 9px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+.separatorLine1 {
+  border-color: #ffffffe7;
+  border-radius: 50px;
+  border-width: 2px;
+  width: 80vw;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .sections {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    transition: 0.2s;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  transition: 0.2s;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
 }
 
 .section {
-    flex: 1;
-    padding: 0 15px;
-    
+  flex: 1;
+  padding: 15px;
+}
+
+.list_sections {
+  font-size: 9px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 
 .avatarContact {
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    width: max-content;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: max-content;
+  padding-right: 50px;
 }
 
 .avatar {
-    box-shadow: rgb(45, 14, 14) 0px 0px 10px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    transition: 1s;
-    margin-right: 0;
-    border-width: 1px;
-    border-color: rgb(255, 255, 255);
+  box-shadow: rgb(45, 14, 14) 0px 0px 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: 1s;
+  margin-right: 0;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
 }
 
 
 .avatar:hover {
-    transition: 1s;
-    box-shadow: rgb(255, 0, 0) 0px 0px 10px;
-    cursor: pointer;
-    transform: scale(1.1);
+  transition: 1s;
+  box-shadow: rgb(255, 0, 0) 0px 0px 10px;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 
 .astrumBottomName {
-    font-size: 15px;
-    font-weight: bold;
-    margin: 0;
-    transition: 2s;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+  transition: 2s;
 }
 
 .astrumBottomName:hover {
-    cursor: pointer;
-    transition: 2s;
-    color: rgb(231, 231, 231);
+  cursor: pointer;
+  transition: 2s;
+  color: rgb(231, 231, 231);
 }
 
 .contactButton {
-    box-shadow: rgb(171, 171, 171) 0px 0px 8px;
-    background-color: #1e9218;
-    border: none;
-    padding: 7px 14px;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    transition: 0.6s;
+  box-shadow: rgb(171, 171, 171) 0px 0px 8px;
+  background-color: #1e9218;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.6s;
 
 }
 
 .contactButton:hover {
-    transition: 0.6s;
-    transform: scale(1.03);
-    background-color: #0b3908;
+  transition: 0.6s;
+  transform: scale(1.03);
+  background-color: #0b3908;
 }
 
 .contactParagraph {
-    font-size: 9px;
-    font-weight: 600;
-    margin: 0;
+  font-size: 9px;
+  font-weight: 600;
+  margin: 0;
 }
 
 .pagesLinksServices {
-    margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .sectionTitle {
-    font-size: 10px;
-    color: rgb(84, 84, 84);
-    font-weight: bold;
-    margin-bottom: 10px;
-    cursor: pointer;
+  font-size: 12px;
+  color: rgb(166, 166, 166);
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .item {
-    cursor: pointer;
-    font-size: 12px;
-    color: rgb(121, 121, 121);
-    margin-bottom: 5px;
-    transition: 0.2s;
+  cursor: pointer;
+  font-size: 10px;
+  color: rgb(143, 143, 143);
+  margin-bottom: 5px;
+  transition: 0.2s;
 }
 
 .item:hover {
-    text-decoration: underline;
-    color: rgb(86, 67, 0);
-    transition: 0.2s;
+  text-decoration: underline;
+  color: rgb(255, 191, 0);
+  transition: 0.2s;
 
-}
-
-.separatorLine {
-    border-top: 1px solid #4c4c4c;
-    margin: 20px 0;
-}
-
-.separatorLine1 {
-    border-top: 1px solid #4c4c4c;
-    margin: 25px 0;
 }
 
 .iconsAndCopy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
 }
 
 .iconWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .imageIcon {
-    border-radius: 50%;
-    transition: 0.5s;
-    margin-right: 10px;
-    transform: scale(0.5);
+  border-radius: 50%;
+  transition: 0.5s;
+  margin-right: 10px;
+  transform: scale(0.5);
 }
 
 .imageIcon:hover {
-    cursor: pointer;
-    transition: 0.6s;
-    transform: scale(0.8);
+  cursor: pointer;
+  transition: 0.6s;
+  transform: scale(0.8);
 }
 
 .copyRight {
-    text-align: right;
-    font-size: 8px;
-    font-weight: 500;
-    color: rgb(255, 0, 0);
+  text-align: right;
+  font-size: 8px;
+  font-weight: 500;
+  color: rgb(255, 0, 0);
 }
-@media (min-width: 200px) and (max-width: 300px) and (orientation: portrait) {
-    .footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 0;
-        position: relative;
-        width: 100vw;
-    }
-
-    .wrapper {
-        width: 100vw;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-
-    .list_sections {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .sections {
-        flex-direction: column;
-        padding: 0;
-        margin-bottom: 0;
-    }
-
-    .section li {
-        font-size: 8px;
- 
-    }
-
-    .avatarContact {
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    .iconsAndCopy {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .iconWrapper {
-        margin-top: 10px;
-    }
-
-
-}
-
-@media (min-width: 300px) and (max-width: 415px) and (orientation: portrait) {
-    .footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 0;
-        position: relative;
-        width: 100vw;
-    }
-
-    .wrapper {
-        width: 100vw;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-
-    .list_sections {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .sections {
-        flex-direction: column;
-    }
-
-    .section {
-        padding: 0;
-        margin-bottom: 20px;
-    }
-
-    .avatarContact {
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    .iconsAndCopy {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .iconWrapper {
-        margin-top: 10px;
-    }
-
-
-}
-
-@media (min-width: 568px) and (max-width: 738px) and (orientation: landscape) {
-    .footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 0;
-        position: relative;
-        width: 100vw;
-    }
-
-    .wrapper {
-        width: 100vw;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-
-    .list_sections {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .sections {
-        flex-direction: column;
-    }
-
-    .section {
-        padding: 0;
-        margin-bottom: 20px;
-    }
-
-    .avatarContact {
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    .iconsAndCopy {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .iconWrapper {
-        margin-top: 10px;
-    }
-
-
-
-} 
-
-@media (min-width: 1000px) and (max-width: 1500px) and (orientation: landscape) {
-    .footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 0;
-        position: relative;
-        width: 100vw;
-    }
-
-    .wrapper {
-        width: 95vw;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-
-    .list_sections {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .sections {
-        flex-direction: row;
-    }
-
-    .section {
-        padding: 0;
-        margin-bottom: 20px;
-    }
-
-    .avatarContact {
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    .iconsAndCopy {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .iconWrapper {
-        margin-top: 10px;
-    }
-
-
-
-} 
