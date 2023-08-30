@@ -15,11 +15,12 @@
 /*  font-family: 'Teko', sans-serif;
 */
 
-.parent ul { 
+.parent ul {
   list-style: none;
 }
 
 .parent {
+  width: max-content;
   z-index: 100;
   background-color: #111b20;
   color: white;
@@ -41,56 +42,57 @@
   margin: 0;
 }
 
-.logo__signature_and_button_parent{ 
+.logo__signature_and_button_parent {
   display: flex;
   width: 90vw;
   justify-content: space-between;
   flex-direction: row;
 }
 
-.logo_item{
+.logo_item {
   margin: 5px;
-  margin-top: 10px;
-
+  margin-top: 15px;
 }
 
-.header_logo { 
-  width: 40px;
-  height: 40px;
+.header_logo {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  box-shadow:white 0px 0px 7px;
+  box-shadow: white 0px 0px 7px;
 }
-.header_logo:hover { 
+
+.header_logo:hover {
   cursor: pointer;
   margin-top: 0;
-  box-shadow:white 0px 0px 12px;
+  box-shadow: white 0px 0px 12px;
 }
 
-.signature_item{
+.signature_item {
   margin: 5px;
 }
 
-.header_signature{ 
+.header_signature {
   margin-left: 25vw;
   margin-top: 15px;
-  transition: 0.5s; 
-}
-.header_signature:hover{
-  cursor: pointer;
-  transition: 0.5s; 
-transform: scale(1.1);
+  transition: 0.5s;
 }
 
-.menu_bars_wrapper{ 
+.header_signature:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.menu_bars_wrapper {
   gap: 1px;
   display: flex;
   flex-direction: column;
-  margin-top:5px;
+  margin-top: 5px;
   align-items: center;
   justify-content: center;
 }
 
-.first_menubar{ 
+.first_menubar {
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -109,29 +111,30 @@ transform: scale(1.1);
   transition: 0.1s;
   background-color: rgb(246, 246, 246);
   padding: 5px;
-  padding-top:9px;
+  padding-top: 9px;
   padding-bottom: 10px;
   margin-bottom: -1px;
-  color: rgb(59, 59, 59);
+  color: rgb(140, 140, 140);
 }
-   .first_menubar p:hover{ 
-     cursor: pointer;
-     transition: 0.1s;
-     color: rgb(223, 223, 223);
-   }
- 
-.first_menubar:hover{ 
+
+.first_menubar p:hover {
+  cursor: pointer;
+  transition: 0.1s;
+  color: rgb(229, 229, 229);
+}
+
+.first_menubar:hover {
   transition: 0.4s;
   background-color: rgba(252, 252, 252, 0);
 }
 
-.second_menubar{ 
+.second_menubar {
   gap: 12vw;
   width: 100vw;
   display: flex;
   font-size: 12px;
   font-family: 'Teko', sans-serif;
-    font-weight: 700;
+  font-weight: 700;
   flex-direction: row;
   white-space: nowrap;
   align-items: center;
@@ -147,68 +150,72 @@ transform: scale(1.1);
   border-color: rgb(212, 212, 212);
   color: rgb(31, 31, 31);
   border-width: 1px;
-  box-shadow: rgb(72, 72, 72) 0px 0px 6px  ;
-
+  box-shadow: rgb(72, 72, 72) 0px 0px 6px;
 }
 
-.second_menubar:hover{ 
+.second_menubar:hover {
   transition: 0.05s;
   color: rgb(224, 119, 0);
   background-color: rgba(242, 242, 242, 0);
-  }
+}
 
-  .second_menubar p{ 
- transition: 0.7s;
-  }
-  .second_menubar p:hover{ 
-    cursor: pointer;
-    transition: 0.4s;
-text-decoration: underline;
-  }
+.second_menubar p {
+  transition: 0.7s;
+}
 
-.buttons{ 
+.second_menubar p:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  text-decoration: underline;
+}
+
+.buttons {
   gap: 10px;
   display: flex;
   margin: 5px;
-  margin-top: 15px;
+  margin-top: 17px;
   margin-left: 0;
-  font-size: 13px;
+  font-size: 15px;
   font-family: 'Teko', sans-serif;
   flex-direction: row;
   margin-left: auto;
   font-weight: 600;
-  color: rgb(35, 35, 35);
+  color: rgb(255, 255, 255);
 }
 
-.register_button{ 
+.register_button {
   border-width: 0.5px;
   border-color: white;
-  width: 70px;
-  padding: 5px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  background-color: rgb(17, 65, 0);
-  border-radius: 0.70rem;
-  transition: 0.7s;
-}
-.register_button:hover{ 
-  background-color: rgb(0, 186, 9);
-  transition: 0.7s;
-}
-
-.login_button{ 
-  border-width: 0.5px;
-  border-color: white;
-  width: 70px;
-  padding: 5px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  width: max-content;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: rgb(238, 238, 238);
   border-radius: 0.70rem;
   transition: 0.4s;
 }
-.login_button:hover{ 
+
+.register_button:hover {
+  color: rgb(55, 55, 55);
   background-color: rgb(0, 186, 9);
   transition: 0.4s;
-  }
+}
 
+.login_button {
+  border-width: 0.5px;
+  border-color: white;
+  width: max-content;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(0, 186, 9);
+  border-radius: 0.70rem;
+  transition: 0.4s;
+}
+
+.login_button:hover {
+  color: rgb(55, 55, 55);
+  background-color: rgb(238, 238, 238);
+  transition: 0.4s;
+  box-shadow: white 0px 0px 5px;
+}
